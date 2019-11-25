@@ -46,8 +46,8 @@ public class LinkController  {
     @PostMapping("/findLinkById")
     @ApiOperation("根据id查询连接")
     public Message<Link> findLinkById(int id){
-        Link link =linkService.findLinkById(id);
-         return MessageUtil.success(link);
+
+         return MessageUtil.success(linkService.findLinkById(id));
     }
 
     @PostMapping("/findAllLink")
